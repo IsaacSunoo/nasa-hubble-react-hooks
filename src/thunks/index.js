@@ -9,6 +9,7 @@ export const getDailyNews = () => {
       dispatch(setLoading(true));
       const dailyNews = await fetchCall(url);
       dispatch(setLoading(false));
+      console.log('daily news in thunk: ', dailyNews);
       dispatch(getDaily(dailyNews));
     } catch (err) {
       dispatch(setError(err.message));
