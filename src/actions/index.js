@@ -8,4 +8,9 @@ export const setLoading = isLoading => ({
   isLoading
 });
 
+export const getDaily = daily => ({
+  type: 'GET_DAILY',
+  daily
+});
+
 
