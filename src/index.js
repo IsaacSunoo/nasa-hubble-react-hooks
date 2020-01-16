@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './Components/App/App';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { rootReducer } from './reducers';
+import { BrowserRouter } from 'react-router-dom';
+import thunk from 'redux-thunk';
 
 import './styles/index.scss';
 
@@ -16,6 +17,8 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root'));
