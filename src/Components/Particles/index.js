@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Particles from "react-particles-js";
+import React, { Component } from 'react';
+import Particles from 'react-particles-js';
 
 class ParticlesContainer extends Component {
   render() {
     return (
       <Particles
-        className="particles-container"
+        className='particles-container'
         params={{
           particles: {
             number: {
@@ -16,19 +16,19 @@ class ParticlesContainer extends Component {
               }
             },
             color: {
-              value: "#ffffff"
+              value: '#ffffff'
             },
             shape: {
-              type: "circle",
+              type: 'circle',
               stroke: {
                 width: 2,
-                color: "#000000"
+                color: '#000000'
               },
               polygon: {
                 nb_sides: 4
               },
               image: {
-                src: "img/github.svg",
+                src: 'img/github.svg',
                 width: 100,
                 height: 100
               }
@@ -56,17 +56,17 @@ class ParticlesContainer extends Component {
             line_linked: {
               enable: true,
               distance: 0,
-              color: "#ffffff",
+              color: '#ffffff',
               opacity: 0.3687847739990702,
               width: 0.6413648243462091
             },
             move: {
               enable: true,
               speed: 6,
-              direction: "none",
+              direction: 'none',
               random: false,
               straight: false,
-              out_mode: "out",
+              out_mode: 'out',
               bounce: false,
               attract: {
                 enable: false,
@@ -76,15 +76,15 @@ class ParticlesContainer extends Component {
             }
           },
           interactivity: {
-            detect_on: "window",
+            detect_on: 'window',
             events: {
               onhover: {
                 enable: true,
-                mode: "repulse"
+                mode: 'repulse'
               },
               onclick: {
                 enable: false,
-                mode: "bubble"
+                mode: 'bubble'
               },
               resize: true
             },

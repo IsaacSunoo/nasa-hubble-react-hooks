@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDailyNews } from '../../thunks';
+import ParticlesContainer from '../Particles';
 
 const MainPage = () => {
   const { daily } = useSelector(state => ({
@@ -16,6 +17,7 @@ const MainPage = () => {
 
   return (
     <div className='nasa-daily'>
+      <ParticlesContainer />
       <h2>{title}</h2>
       <a href={url} ><img src={hdurl} alt='nasa daily img' /></a>
       <p>{explanation}</p>
