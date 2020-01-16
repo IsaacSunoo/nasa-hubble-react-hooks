@@ -16,3 +16,7 @@ export const getDailyNews = () => {
     }
   }
 }
+
+export const getNasaStars = () => {
+
+}

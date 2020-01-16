@@ -13,4 +13,9 @@ export const getDaily = daily => ({
   daily
 });
 
+export const getHubble = hubble => ({
+  type: 'GET_HUBBLE',
+  hubble
+});
+
 
